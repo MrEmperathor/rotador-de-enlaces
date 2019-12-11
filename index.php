@@ -74,17 +74,12 @@ if (isset($id)){
 				$key = hex2bin('E0FAC2DD2C00FFE30F27A6D14568CB4F12EB84676A3A2BFB172A444C3BBB831F');
 				$iv = hex2bin('5A79774BB4B326EED949E6871FC27697');
 
-				// $iv = '0000000000';
-				// $encryptedMessage = openssl_encrypt($textToEncrypt, $encryptionMethod, $secretHash, 0, $iv);
-				// $decryptedMessage = openssl_decrypt($encryptedMessage, $encryptionMethod, $secretHash, 0, $iv);
-
 
 				$output = openssl_encrypt($value, $encrypt_method, $key, 0, $iv);
 				$plain_txt = base64_encode($output);
 
 				$host = parse_url($value);
 				
-				// $ss = '<a target="_blank" href="'.$domiE . $plain_txt.'">'.$host['host'].'</a>';
 				$ss = $domiE . $plain_txt;
 				$fila["Mirror$n"] = str_replace($value, $ss, $fila["Mirror$n"]);
 				}

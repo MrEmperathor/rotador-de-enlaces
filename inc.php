@@ -1,5 +1,5 @@
 <?php
-// DATOS ACORTADORES
+
 // cantidad de acortadores
 $canAcorta = 4;
 
