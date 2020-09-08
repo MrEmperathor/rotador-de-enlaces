@@ -1,4 +1,9 @@
 <?php
+/*
+Multitaste Script Vip v2.5
+Programado por KJ
+Prohibido para la venta o distribucion sin permiso previo del programador
+*/
 $thefile="index.php";
 require_once ("pagination.php");
 include ("header.php");
